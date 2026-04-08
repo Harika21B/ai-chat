@@ -4,7 +4,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchAIResponse = createAsyncThunk(
   "chat/fetchAIResponse",
   async (message) => {
-    const res = await fetch("http://ai-chat.com", {
+    const res = await fetch("https://harika-ai-chat.onrender.com/api/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
